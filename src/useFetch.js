@@ -7,11 +7,7 @@ const useFetch = (url) => {
     useEffect(() => {
         const abortCont = new AbortController();
         setTimeout(() => {
-            fetch(
-                url,
-                { signal: abortCont.signal },
-                { "Content-Type": "text/plain" }
-            )
+            fetch(url, { signal: abortCont.signal })
                 .then((res) => {
                     if (!res.ok) {
                         throw Error("error hai vai");

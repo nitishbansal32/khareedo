@@ -1,46 +1,60 @@
 {
     "product": [
         {
-            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gettyimages.com%2Fphotos%2Fpressure-cooker&psig=AOvVaw0FtgvqnAtMybEloZsMW77g&ust=1643284502327000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKCX3vqtz_UCFQAAAAAdAAAAABAD",
+            "img": "../Images/basketball.jpg",
             "name": "Pressure Cooker",
             "price": 3000,
-            "id": 1
+            "id": 1,
+            "Pincode": "147001",
+            "location": "Patiala"
         },
         {
-            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FHero-Sprint-Whistel-Cycle-11yrs%2Fdp%2FB08263MW35&psig=AOvVaw0eHjGXXy4gV0WJh1EscO5h&ust=1643284560800000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLi5_JWuz_UCFQAAAAAdAAAAABAD",
+            "img": "../Images/BMX.jpg",
             "name": "BMX Bike",
             "price": 6000,
-            "id": 2
+            "id": 2,
+            "Pincode": "110057",
+            "location": "Vasant Vihar"
         },
         {
-            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.philips.co.in%2Fc-p%2FGC1905_21%2F1900-series-steam-iron&psig=AOvVaw3sQkoVzQHKN3I-xMylYYRI&ust=1643284599913000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDJnqmuz_UCFQAAAAAdAAAAABAD",
+            "img": "../Images/Ironpress.jpg",
             "name": "Iron press",
             "price": 9000,
-            "id": 3
+            "id": 3,
+            "Pincode": "247001",
+            "location": "Saharanpur"
         },
         {
-            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.philips.co.in%2Fc-p%2FGC1905_21%2F1900-series-steam-iron&psig=AOvVaw3sQkoVzQHKN3I-xMylYYRI&ust=1643284599913000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDJnqmuz_UCFQAAAAAdAAAAABAD",
+            "img": "../Images/basketball.jpg",
             "name": "Iron press",
             "price": 9000,
-            "id": 4
+            "id": 4,
+            "Pincode": "223007",
+            "location": "Agra"
         },
         {
-            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.philips.co.in%2Fc-p%2FGC1905_21%2F1900-series-steam-iron&psig=AOvVaw3sQkoVzQHKN3I-xMylYYRI&ust=1643284599913000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDJnqmuz_UCFQAAAAAdAAAAABAD",
+            "img": "../Images/BMX.jpg",
             "name": "Iron press",
             "price": 9000,
-            "id": 5
+            "id": 5,
+            "Pincode": "208001",
+            "location": "Kanpur"
         },
         {
-            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.philips.co.in%2Fc-p%2FGC1905_21%2F1900-series-steam-iron&psig=AOvVaw3sQkoVzQHKN3I-xMylYYRI&ust=1643284599913000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDJnqmuz_UCFQAAAAAdAAAAABAD",
+            "img": "../Images/Ironpress.jpg",
             "name": "Iron press",
             "price": 9000,
-            "id": 6
+            "id": 6,
+            "Pincode": "632001",
+            "location": "Vellore"
         },
         {
-            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.philips.co.in%2Fc-p%2FGC1905_21%2F1900-series-steam-iron&psig=AOvVaw3sQkoVzQHKN3I-xMylYYRI&ust=1643284599913000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDJnqmuz_UCFQAAAAAdAAAAABAD",
+            "img": "../Images/basketball.jpg",
             "name": "Iron press",
             "price": 9000,
-            "id": 7
+            "id": 7,
+            "Pincode": "171001",
+            "location": "Shimla"
         }
     ]
 }

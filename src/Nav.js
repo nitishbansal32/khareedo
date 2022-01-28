@@ -1,8 +1,14 @@
 const Nav = () => {
+    function findMyLocation(e) {
+        e.preventDefault();
+        alert("Submit button clicked");
+    }
     return (
         <nav>
             <img src="" alt="logo" />
-            <button className="location">Location</button>
+            <button onClick={findMyLocation} className="location">
+                Location
+            </button>
             <div className="search-bar">
                 <button className="search-icon">
                     <img src="" alt="search-icon" />
