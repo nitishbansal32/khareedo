@@ -1,23 +1,18 @@
+import PopUp from "./PopUp";
+import Search from "./Search";
 const Nav = () => {
-    function findMyLocation(e) {
-        e.preventDefault();
-        alert("Submit button clicked");
-    }
     return (
         <nav>
             <img src="" alt="logo" />
-            <button onClick={findMyLocation} className="location">
-                Location
-            </button>
-            <div className="search-bar">
-                <button className="search-icon">
-                    <img src="" alt="search-icon" />
-                </button>
-                <div className="search-query"></div>
-                <button className="search-filter">
-                    <img src="" alt="search-filter" />
-                </button>
-            </div>
+            <PopUp
+                idMessage="Location"
+                button1="Sign in to see your address"
+                button2="Enter"
+                imgsrc="../Images/cross.png"
+                placeHolder="Enter PIN"
+            />
+            <Search />
+
             <button className="country-picker">
                 <img src="" alt="country" />
             </button>

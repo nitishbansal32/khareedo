@@ -5,6 +5,7 @@ import Card from "./cardComp";
 function App() {
     return (
         <div className="App">
+            <div className="fade-bg"></div>
             <Nav />
             <div className="container">
                 <Card />
