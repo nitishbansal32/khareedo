@@ -1,0 +1,44 @@
+{
+    "filter": [
+        {
+            "type": "All Categories",
+            "id": 1
+        },
+        {
+            "type": "Devices",
+            "id": 2
+        },
+        {
+            "type": "Fashion",
+            "id": 3
+        },
+        {
+            "type": "sports",
+            "id": 4
+        },
+        {
+            "type": "Luxury",
+            "id": 5
+        },
+        {
+            "type": "Home & Kitchen",
+            "id": 6
+        },
+        {
+            "type": "Jewellery",
+            "id": 7
+        },
+        {
+            "type": "Music",
+            "id": 8
+        },
+        {
+            "type": "Tools",
+            "id": 9
+        },
+        {
+            "type": "Electronics",
+            "id": 10
+        }
+    ]
+}

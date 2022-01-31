@@ -1,17 +1,16 @@
 import { useState } from "react";
+import FadeBackGround from "./FadeBackGround";
 
 const PopUp = ({ idMessage, button1, button2, imgsrc, placeHolder }) => {
     const [open, setOpen] = useState(false);
     window.addEventListener("click", (event) => {
-        console.log(event.target.className);
+        // console.log(event.target.className);
         if (event.target.className === "close") {
             document.querySelector("#Location").style.display = "none";
             document.querySelector(".fade-bg").style.display = "none";
         }
     });
-    function fadeBackground() {
-        document.querySelector(".fade-bg").style.display = "block";
-    }
+    <FadeBackGround />;
 
     return (
         <>
@@ -51,7 +50,7 @@ const PopUp = ({ idMessage, button1, button2, imgsrc, placeHolder }) => {
                 </div>
             )}
 
-            {open && fadeBackground()}
+            {open && FadeBackGround()}
         </>
     );
 };

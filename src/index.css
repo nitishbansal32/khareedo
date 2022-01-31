@@ -12,17 +12,22 @@ nav {
 }
 
 .search-bar {
-    width: 500px;
+    width: 40%;
+    height: 30%;
     display: flex;
     border: 2px solid rgba(207, 205, 205, 0.603);
     flex-direction: row-reverse;
+    justify-content: space-between;
+    z-index: 4;
 }
 
 .search-query {
-    width: 300px;
+    width: 30%;
+    height: 30%;
 }
 .search-filter {
-    justify-self: flex-start;
+    width: 9em;
+    height: 100%;
 }
 
 .nav-elements ul {
@@ -164,4 +169,29 @@ nav {
     display: none;
     opacity: 0.8;
     z-index: 2;
+}
+
+/* Drop down */
+
+.drop-down-container {
+    position: relative;
+}
+.drop-down-div {
+    position: absolute;
+    left: 0;
+    background: rgb(10, 23, 41);
+    z-index: 4;
+}
+
+.filter-elements-ul {
+    list-style-type: none;
+    padding: 0.25em 1em;
+    z-index: 2;
+}
+.filter-elements-div ul:hover {
+    background: #0083d8;
+}
+
+.filter-elements-div li {
+    color: white;
 }
