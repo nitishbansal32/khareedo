@@ -3,14 +3,6 @@ import FadeBackGround from "./FadeBackGround";
 
 const PopUp = ({ idMessage, button1, button2, imgsrc, placeHolder }) => {
     const [open, setOpen] = useState(false);
-    window.addEventListener("click", (event) => {
-        // console.log(event.target.className);
-        if (event.target.className === "close") {
-            document.querySelector("#Location").style.display = "none";
-            document.querySelector(".fade-bg").style.display = "none";
-        }
-    });
-    <FadeBackGround />;
 
     return (
         <>
@@ -32,7 +24,12 @@ const PopUp = ({ idMessage, button1, button2, imgsrc, placeHolder }) => {
                     aria-hidden="true"
                 >
                     <div className="pop-up-img-div">
-                        <img className="close" src={imgsrc} alt="Cross" />
+                        <img
+                            onClick={() => setOpen(!open)}
+                            className="close"
+                            src={imgsrc}
+                            alt="Cross"
+                        />
                     </div>
 
                     <button id="button-1-button">{button1}</button>
@@ -50,7 +47,7 @@ const PopUp = ({ idMessage, button1, button2, imgsrc, placeHolder }) => {
                 </div>
             )}
 
-            {open && FadeBackGround()}
+            <FadeBackGround fadeOption={open} />
         </>
     );
 };

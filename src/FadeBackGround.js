@@ -1,5 +1,5 @@
-function FadeBackGround() {
-    document.querySelector(".fade-bg").style.display = "block";
-}
+const FadeBackGround = ({ fadeOption }) => {
+    return <>{fadeOption && <div className="fade-bg"></div>}</>;
+};
 
 export default FadeBackGround;
