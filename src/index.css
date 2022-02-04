@@ -11,36 +11,62 @@ nav {
     justify-content: space-around;
 }
 
+::-webkit-scrollbar {
+    width: 11px;
+    cursor: pointer;
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(19, 129, 230, 0.8);
+}
+
+/* Search container */
+
 .search-bar {
     width: 40%;
-    height: 30%;
+    height: 2em;
     display: flex;
     border: 2px solid rgba(207, 205, 205, 0.603);
     flex-direction: row-reverse;
     justify-content: space-between;
-    z-index: 4;
+    z-index: 2;
 }
-
+.search-icon {
+    width: 4em;
+}
 .search-query {
-    width: 30%;
-    height: 30%;
+    width: 65%;
+    height: 100%;
 }
 .search-filter {
     width: 9em;
     height: 100%;
 }
 
-.nav-elements ul {
+/* Order and cart  */
+.nav-elements {
     display: flex;
-    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
 }
-.nav-elements ul li {
-    padding: 0 2em;
-}
-.nav-elements ul li a {
+
+.nav-elements-li {
     text-decoration: none;
-    color: white;
+    color: black;
+    font-family: "Inter", "sans-serif";
 }
+
+/* cards styling */
+
 .container {
     display: flex;
     /* border: 2px solid red; */
@@ -71,6 +97,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     border-radius: 8px;
+    position: relative;
 }
 
 .card-img-div {
@@ -85,13 +112,20 @@ nav {
     width: 100%;
     height: 100%;
 }
-
+.card-details-div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1.5em;
+}
+.card-details-div button {
+    padding: 0.3em;
+    font-size: 12px;
+}
 .card-details {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 0.5em;
-    align-items: center;
 }
 .cards p,
 .cards span {
@@ -110,8 +144,19 @@ nav {
     font-size: 16px;
 }
 
+/* card details page  */
+
+.card-details-container img {
+    width: 30%;
+}
+
 /* pop up */
 
+.pop-up-btn {
+    padding: 0.5em;
+}
+
+/* pop up div  */
 #Location {
     width: 30%;
     height: 20%;
@@ -133,6 +178,14 @@ nav {
     top: 10px;
     right: 20px;
 }
+
+.pop-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
 #button-1-button {
     padding: 0.75em 2em;
     color: white;
@@ -151,13 +204,7 @@ nav {
     border: 0;
 }
 
-.pop-up-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-}
+/* fade-bg  */
 
 .fade-bg {
     position: absolute;
@@ -168,10 +215,10 @@ nav {
     left: 0;
     /* display: none; */
     opacity: 0.8;
-    z-index: 2;
+    z-index: 3;
 }
 
-/* Drop down */
+/* Drop down with only text*/
 
 .drop-down-container {
     position: relative;
@@ -179,14 +226,20 @@ nav {
 .drop-down-div {
     position: absolute;
     left: 0;
+    right: 0;
     background: rgb(10, 23, 41);
     z-index: 4;
+    height: 60vh;
+    overflow-y: scroll;
 }
 
 .filter-elements-ul {
     list-style-type: none;
-    padding: 0.25em 1em;
+    padding: 0.2em 0;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .filter-elements-div ul:hover {
     background: #0083d8;
@@ -194,4 +247,23 @@ nav {
 
 .filter-elements-div li {
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filter-button-text {
+    margin: 0;
+}
+.drop-down-img {
+    width: 32px;
+    height: 32px;
+    padding: 0 0.5em;
+}
+
+.img-btn-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
 }

@@ -9,7 +9,7 @@ const PopUp = ({ idMessage, button1, button2, imgsrc, placeHolder }) => {
             <button
                 onClick={() => setOpen(!open)}
                 type="button"
-                className="btn btn-primary"
+                className="pop-up-btn"
             >
                 {idMessage}
             </button>

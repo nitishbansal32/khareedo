@@ -1,6 +1,9 @@
 import PopUp from "./PopUp";
 import Search from "./Search";
-const Nav = () => {
+import DropDown from "./DropDown";
+import { Link } from "react-router-dom";
+
+const Nav = ({ stripe, options }) => {
     return (
         <nav>
             <img src="" alt="logo" />
@@ -12,20 +15,17 @@ const Nav = () => {
                 placeHolder="Enter PIN"
             />
             <Search />
-
-            <button className="country-picker">
-                <img src="" alt="country" />
+            <DropDown
+                DropDownClass="nav-btn"
+                url="https://countriesnow.space/api/v0.1/countries/flag/images"
+                imgsrc=""
+                CondTextImg="true"
+            />
+            <button className="nav-elements">
+                <Link className="nav-elements-li" to="/cart">
+                    Cart
+                </Link>
             </button>
-            <div className="nav-elements">
-                <ul>
-                    <li>
-                        <a href="/">Orders</a>
-                    </li>
-                    <li>
-                        <a href="/">Cart</a>
-                    </li>
-                </ul>
-            </div>
         </nav>
     );
 };

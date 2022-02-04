@@ -7,7 +7,11 @@ const Search = () => {
                 <img src="" alt="search-icon" />
             </button>
             <div className="search-query"></div>
-            <DropDown />
+            <DropDown
+                DropDownClass="search-filter"
+                url="http://localhost:9000/filter"
+                CondOnlyText="true"
+            />
         </div>
     );
 };
